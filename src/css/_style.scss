@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    // cursor: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    background: $secondary;
+}
+
+.home {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    margin-left: 4rem;
+    font-size: 10rem;
+    font-weight: 900;
+    color: $primary;
+    display: block
+}
+
+.pointer {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    mix-blend-mode: exclusion;
+    transform-origin: top;
+    transform: translateX(-50%) rotate(45deg);
+    transition: top .25s ease-out, left .25s ease-out, rotate 1s;
+    // animation: jumpy .75s ease-out infinite forwards;
+}
+
+@include jumpy;
